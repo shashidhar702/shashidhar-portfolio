@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import profileImg from "@/assets/profile.jpg";
 
 export default function HeroSection() {
   return (
@@ -10,8 +11,8 @@ export default function HeroSection() {
         </h1>
 
         <p className="text-xl md:text-2xl text-slate-600 leading-relaxed">
-          Full-Stack Developer & SAP BTP Engineer.  
-          I build enterprise-grade apps using React, Node.js,  
+          Full-Stack Developer & SAP BTP Engineer.
+          I build enterprise-grade apps using React, Node.js,
           SAP UI5/Fiori, CAP & S/4HANA.
         </p>
 
@@ -27,7 +28,20 @@ export default function HeroSection() {
 
       {/* RIGHT SIDE VISUAL */}
       <div className="flex-1 flex justify-center mt-10 md:mt-0">
-        <div className="w-64 h-64 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 opacity-90 shadow-xl"></div>
+        <img
+          src={profileImg}
+          alt="Shashidhar"
+          className="
+            w-70 h-70 
+            object-cover
+            rounded-full 
+            shadow-xl 
+            border-4 border-white
+            hover:scale-105 
+            transition-transform 
+            duration-300
+          "
+        />
       </div>
     </section>
   );

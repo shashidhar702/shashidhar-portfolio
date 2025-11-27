@@ -4,7 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 import path from 'path'
 
 export default defineConfig({
-  base: "/shashidhar-portfolio/",  // 👈 ADD THIS LINE
+  base: "/",  
   plugins: [
     react(),
     tailwindcss(),
