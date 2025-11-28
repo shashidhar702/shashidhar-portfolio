@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import profileImg from "@/assets/profile1.png";
+import { DownloadIcon } from "lucide-react";
 
 export default function HeroSection() {
   return (
@@ -7,23 +8,34 @@ export default function HeroSection() {
       {/* LEFT SIDE TEXT */}
       <div className="flex-1 space-y-6">
         {/* <h1 className="text-4xl md:text-6xl font-bold text-slate-900"> */}
-          <h1 className="text-4xl md:text-6xl font-bold text-slate-900 leading-tight">
-            Hi, I'm <span className="whitespace-nowrap">Shashidhar Reddy</span> Chamakura
-          </h1>
-          {/* Hi, I'm Shashidhar Reddy Chamakura.
+        <h1 className="text-4xl md:text-6xl font-bold text-slate-900 leading-tight">
+          Hi, I'm <span className="whitespace-nowrap">Shashidhar Reddy</span> Chamakura
+        </h1>
+        {/* Hi, I'm Shashidhar Reddy Chamakura.
         </h1> */}
 
         <p className="text-xl md:text-2xl text-slate-600 leading-relaxed">
           SAP BTP Engineer & Full-Stack Developer.
           I build enterprise-grade apps using React, Node.js,
-          SAP UI5/Fiori, CAP & S/4HANA.
+          SAP UI5/Fiori, CAPM & S/4HANA.
         </p>
 
         <div className="flex items-center gap-4">
-          <Button size="lg">View My Work</Button>
-          <Button variant="outline" size="lg">
-            Download My Resume
-          </Button>
+          <button
+            onClick={() => {
+              const el = document.getElementById("projects");
+              el?.scrollIntoView({ behavior: "smooth" });
+            }}
+          >
+            <Button size="lg" className="px-8 py-6 text-lg">
+              View My Work
+            </Button>
+          </button>
+          <a href="/Shashidhar_Reddy_Resume.pdf" download>
+            <Button variant="outline" size="lg">
+              <DownloadIcon />
+              Download My Resume
+            </Button> </a>
         </div>
 
         <p className="text-slate-500">📍 Plainsboro, New Jersey, USA. --Open to roles</p>

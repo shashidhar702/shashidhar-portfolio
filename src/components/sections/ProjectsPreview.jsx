@@ -1,5 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
+import { ArrowBigRight } from "lucide-react";
 
 export default function ProjectsPreview() {
   const projects = [
@@ -45,9 +47,11 @@ export default function ProjectsPreview() {
         ))}
       </div>
 
-      <div className="text-center mt-12">
-        <Button size="lg">View All Projects</Button>
-      </div>
+      <Link to="/projects">
+        <div className="text-center mt-12">
+          <Button size="lg">View All Projects <ArrowBigRight /> </Button>
+        </div>
+      </Link>
     </section>
   );
 }

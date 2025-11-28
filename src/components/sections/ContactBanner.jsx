@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import LinkedInIcon from "../common/LinkedInIcon";
+import { MailIcon } from "lucide-react";
 
 export default function ContactBanner() {
     return (
@@ -14,10 +15,11 @@ export default function ContactBanner() {
                     Feel free to reach out — I usually respond within 24 hours.
                 </p>
 
+                <p className="text-slate-400 mt-10">
+                    📩 Email: <span className="font-medium">Shashidhar702@gmail.com</span> 📞 Phone: <span className="font-medium">+1-(551) 260-2546</span>
+                </p>
+
                 <div className="mt-10 flex flex-col md:flex-row items-center justify-center gap-6">
-                    <Button size="lg" className="px-8 py-6 text-lg">
-                        Contact Me
-                    </Button>
 
                     <Button
                         size="lg"
@@ -33,11 +35,21 @@ export default function ContactBanner() {
                         <LinkedInIcon className="w-5 h-5" />
                         <span className="font-semibold">LinkedIn</span>
                     </Button>
+                    <a  href="mailto:shashidhar702@gmail.com">
+                        <Button
+                            size="lg"
+                            variant="outline"
+                            className="cursor-pointer px-8 py-6 text-lg bg-white text-slate-900 rounded-full border border-slate-300 hover:bg-slate-100 flex items-center gap-3 shadow-sm"
+                           
+                        >
+                            <MailIcon className="w-5 h-5" />
+                            <span className="font-semibold">Email</span>
+                        </Button>
+                    </a>
+
                 </div>
 
-                <p className="text-slate-400 mt-10">
-                    📩 Email: <span className="font-medium">Shashidhar702@gmail.com</span>
-                </p>
+
             </div>
         </section>
     );
