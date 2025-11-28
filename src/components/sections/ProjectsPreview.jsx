@@ -7,7 +7,7 @@ export default function ProjectsPreview() {
       title: "GCRaft KCRS (SAP BTP + CAP + UI5 + S/4HANA)",
       description:
         "An enterprise change request management system built on SAP BTP using CAP services, SAP UI5 frontend, and S/4HANA integrations.",
-      tech: "SAP BTP · CAP · UI5 · S/4HANA",
+      tech: "SAP BTP · CAPM · UI5 · S/4HANA",
     },
     {
       title: "Secure Transfers (Angular + NestJS)",
@@ -16,10 +16,10 @@ export default function ProjectsPreview() {
       tech: "Angular · NestJS · NodeJS",
     },
     {
-      title: "Cutover Tool (React + Firebase)",
+      title: "Cutover Tool (React + postgreSql)",
       description:
-        "A real-time go-live and deployment management tool used by teams for tracking cutover activities and issue resolution.",
-      tech: "React · Firebase · Firestore",
+        "A real-time go-live and deployment management tool used by teams for tracking cutover activities and issue resolution. Deployed the entire application as a non-SAP workload on SAP BTP Cloud Foundry. ",
+      tech: "React · NodeJs · SAPBTP · Cloud Foundry",
     },
   ];
 

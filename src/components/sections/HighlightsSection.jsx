@@ -2,10 +2,14 @@ import { Card } from "@/components/ui/card";
 
 export default function HighlightsSection() {
   const highlights = [
-    "🎓 MS in Computer Science – Montclair State (2024)",
+    "🎓 MS in Computer Science – Montclair State University (DECEMBER 2024)",
     "💼 5+ years in Full-Stack + SAP BTP Development",
-    "🧩 SAP UI5 / Fiori · CAP · React · Node · S/4HANA",
-    "🌍 F-1 STEM OPT · Open to Relocation",
+    "🏢 Built & supported enterprise apps used by global business teams",
+    "🧩 SAP UI5 / Fiori · CAPM · NodeJS · S/4HANA · SAP BTP · React · NestJs",
+    "🌍 F-1 STEM OPT · Based in New Jersey · Open to Relocation",
+    "🛠️ Delivered 10+ enterprise-grade applications across multiple teams",
+    "🎨 Modern + enterprise UI/UX sense – shadcn/ui, Tailwind, Material UI, Ant Design & SAP Fiori design system",
+    "🚀 Passionate about AI, cloud technologies, and modern engineering",
   ];
 
   return (
